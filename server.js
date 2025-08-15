@@ -79,7 +79,8 @@ app.get("/boss", (req, res, next) => {
     };
     console.log(`${new Date(req.requestTime).toISOString()}: METHOD:${req.method}, ROUTE:${req.path}, ACCESS ${accessGranted? "ALLOWED" : "DENIED"}`)
 })
-//boss 
+
+//boss without designation
 app.get("/boss", (req, res) => {
     res.send("It seems you ended up here by accident, try boss/dashboard, boss/profile boss/destruction ")
 })
